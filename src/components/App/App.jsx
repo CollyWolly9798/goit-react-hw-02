@@ -3,6 +3,7 @@ import './App.css';
 import Description from '../Description/Description';
 import Options from '../Options/Options';
 import Feedback from '../Feedback/Feedback';
+import Notification from '../Notification/Notification';
 
 export default function App() {
   const [feedback, setFeedback] = useState(() => {
@@ -36,7 +37,7 @@ export default function App() {
       {totalFeedback > 0 ? (
         <Feedback feedback={feedback} totalFeedback={totalFeedback} positivePercentage={positivePercentage} />
       ) : (
-        <p>No feedback yet</p>
+        <Notification />
       )}
     </>
   );
