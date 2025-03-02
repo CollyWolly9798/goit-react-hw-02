@@ -1,5 +1,4 @@
 export default function Feedback({ feedback, totalFeedback, positivePercentage }) {
-  console.log('totalFeedback', totalFeedback);
   return (
     <>
       <p>Good:{feedback.good}</p>
